@@ -353,10 +353,19 @@ nav a:hover{
     }
 
     .logo{
-        object-fit:contain;
-        width:auto;
+        width:20%;
     }
 
+    .logo span{
+        font-size:20px;
+        white-space:nowrap;
+    }
+
+    .logo img{
+        width:32px;
+        height:32px;
+    }
+    
     .menu-toggle{
         display:flex;
     }
