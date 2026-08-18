@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produto | Smart Shield</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="cards.css">
+    <link rel="stylesheet" href="individual.css">
+
+    <link rel="icon" type="image/png" href="fav.png">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+<header>
+    <div class="logo">
+        <img src="smartlogo.png" alt="Logo da Smart">
+        <span>SMART SHIELD</span>
+    </div>
+
+    <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+
+    <nav>
+        <!--menu de cima lá-->
+    <ul class="menu">
+        <li> <a href="index.html">Início</a> </li>
+        <!--<li> <a href="revendedores.html">Parceiros</a> </li>--> 
+
+        <!-- produtos -->
+        <li class="dropdown">
+            <a href="produtos.html">Produtos</a>
+        <ul class="dropdown-menu">
+            <li>
+                <a href="produtos.html?categoria=all">
+                    Todos
+                </a>
+            </li>
+            <li>
+                <a href="produtos.html?categoria=peliculas">
+                    Películas
+                </a>
+            </li>
+            <li>
+                <a href="produtos.html?categoria=maquinas">
+                    Máquinas
+                </a>
+            </li>
+            <li>
+                <a href="produtos.html?categoria=acessorios">
+                    Acessórios
+                </a>
+            </li>
+        </ul>
+        </li>
+        
+        <!--só a parte do contato-->
+        <li class="dropdown">
+            <a href="#">Contato</a>
+        <ul class="dropdown-menu">
+            <li>
+                <a href="https://api.whatsapp.com/send?phone=554499485216&text=Olá!%20Acessei%20o%20site%20de%20vocês%20e%20desejo%20atendimento..." target="_blank">
+                    WhatsApp </a>
+            </li>
+            <li>
+                <a href="https://www.instagram.com/smartshieldd/" target="_blank">
+                    Instagram </a>
+            </li>
+            <li>
+                <a href="parceiros.html">
+                    Seja um Parceiro </a>
+            </li>
+        </ul>
+        </li>
+    </ul>
+    </nav>
+</header>
+
+<nav class="breadcrumb" id="breadcrumb"></nav>
+
+<div id="produto-container"></div>
+
+<footer>
+    <div class="topo-footer">
+        <div class="logo-footer">
+            <img src="smartlogo.png" alt="Smart Shield">
+            <span>Smart Shield</span>
+        </div>
+        <ul class="footer-links">
+            <li><a href="index.html">Início</a></li>
+            <li><a href="produtos.html">Produtos</a></li>
+            <li><a href="parceiros.html">Seja um Parceiro</a></li>
+            <li><a href="https://instagram.com/smartshieldd" target="_blank">Instagram</a></li>
+        </ul>
+        <p class="copyright">© <span id="footer-year"></span> Todos os direitos reservados.</p>
+    </div>
+    <div class="info-footer">
+        <p>
+            Av. Artur M. Tomás, 1312 - Zona 6<br>
+            Cianorte - PR, CEP 87205-050<br>
+            CNPJ 45.656.001/0001-27
+        </p>
+        <p>
+            (44) 9 9948-5216<br>
+            contato@smartshield.com.br
+        </p>
+    </div>
+</footer>
+
+
+
+    <!-- Adicionei o botão de voltar ao topo -->
+<a href="#" class="back-to-top" id="backToTop">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+        <path d="M12 19V5M12 5L5 12M12 5L19 12"
+              stroke="currentColor"
+              stroke-width="2.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"/>
+    </svg>
+</a>
+
+<script src="produtos.js"></script>
+<script src="cards.js"></script>
+<script src="breadcrumb.js"></script>
+<script src="main.js"></script>
+<script src="individual.js"></script>
+
+</body>
+</html>

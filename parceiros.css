@@ -1,0 +1,382 @@
+/* HERO */
+
+.hero-distribuidor{
+    width:100%;
+    min-height:85vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:120px 8% 80px;
+    background:
+        linear-gradient(rgba(0,0,0,.72),
+        rgba(0,0,0,.78)),
+        url("smart01.jpg")
+        center/cover no-repeat;
+}
+
+.hero-content{
+    max-width:760px;
+    text-align:center;
+}
+
+.tag{
+    display:inline-block;
+    padding:8px 18px;
+    border-radius:999px;
+    background:#00aaff20;
+    color:#ff4e00;
+    font-size:14px;
+    font-weight:700;
+}
+
+.hero-content h1{
+    margin-top:20px;
+    font-size:clamp(38px,5vw,62px);
+    line-height:1.1;
+    color:#fff;
+}
+
+.hero-content p{
+    margin:30px auto;
+    max-width:620px;
+    color:#d6d6d6;
+    font-size:18px;
+    line-height:1.8;
+}
+
+.cta{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    padding:16px 34px;
+    border-radius:10px;
+    background:#ff4e00;
+    color:#fff;
+    text-decoration:none;
+    font-weight:700;
+    transition:.3s;
+}
+
+.cta:hover{
+    transform:
+    scale(1.1)
+    translateY(-4px);
+    box-shadow:0 15px 35px rgba(192, 80, 14, 0.39);
+}
+
+/* BENEFÍCIOS */
+
+.beneficios{
+    width:min(1200px,90%);
+    margin:100px auto;
+}
+
+.beneficios h2{
+    text-align:center;
+    margin-bottom:60px;
+    font-size:40px;
+}
+
+.beneficios-grid{
+    display:grid;
+    grid-template-columns:
+        repeat(auto-fit,minmax(240px,1fr));
+    gap:30px;
+}
+
+.beneficio{
+    padding:40px 30px;
+    border-radius:18px;
+    background:#181818;
+    text-align:center;
+    transition:.35s;
+    border:1px solid transparent;
+}
+
+.beneficio:hover{
+    transform:translateY(-8px);
+    border:1px solid #ff4e00;
+}
+
+.beneficio h3{
+    margin:20px 0 10px;
+}
+
+.beneficio p{
+    color:#bdbdbd;
+}
+
+/* PROCESSO */
+
+.processo{
+    background:#111;
+    padding:100px 8%;
+}
+
+.processo h2{
+    text-align:center;
+    margin-bottom:70px;
+    font-size:40px;
+}
+
+.steps{
+    display:grid;
+    grid-template-columns:
+        repeat(auto-fit,minmax(220px,1fr));
+    gap:30px;
+}
+
+.step{
+    text-align:center;
+}
+
+.step span{
+    width:70px;
+    height:70px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    margin:auto;
+    border-radius:50%;
+    background:#ff4e00;
+    color:#fff;
+    font-size:28px;
+    font-weight:bold;
+}
+
+.step h3{
+    margin:25px 0 10px;
+}
+
+/* FORMULÁRIO */
+
+.formulario{
+    width:min(760px,90%);
+    margin:120px auto;
+}
+
+.formulario h2{
+    text-align:center;
+    font-size:40px;
+}
+
+.formulario-sub{
+    text-align:center;
+    color:#bdbdbd;
+    margin:14px auto 50px;
+    max-width:520px;
+}
+
+.form-parceiro{
+    display:flex;
+    flex-direction:column;
+    gap:26px;
+    background:#111;
+    border:1px solid rgba(104, 1, 1, 0.08);
+    border-radius:20px;
+    padding:40px;
+}
+
+.form-row{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:20px;
+}
+
+.form-group{
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+}
+
+.form-group label{
+    font-weight:600;
+    font-size:.95rem;
+    color:#d6d6d6;
+}
+
+.form-parceiro input[type="text"],
+.form-parceiro select{
+    background:#181818;
+    border:1px solid #292929;
+    color:#fff;
+    padding:14px 16px;
+    border-radius:12px;
+    font-size:1rem;
+    outline:none;
+    transition:.3s;
+    appearance:none;
+    -webkit-appearance:none;
+}
+
+.form-parceiro select:disabled{
+    opacity:.5;
+    cursor:not-allowed;
+}
+
+.form-parceiro input[type="text"]:focus,
+.form-parceiro select:focus{
+    border-color:#ff4e00;
+    box-shadow:0 0 15px rgba(255,78,0,.25);
+}
+
+.opcoes-interesse{
+    display:flex;
+    flex-direction:column;
+    gap:12px;
+}
+
+.checkbox-opcao{
+    display:flex;
+    align-items:center;
+    gap:12px;
+    background:#181818;
+    border:1px solid #292929;
+    border-radius:12px;
+    padding:14px 16px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.checkbox-opcao:has(input:checked){
+    border-color:#ff4e00;
+    background:#241a12;
+}
+
+.checkbox-opcao input{
+    width:18px;
+    height:18px;
+    accent-color:#ff4e00;
+    cursor:pointer;
+}
+
+.subopcoes{
+    border-left:2px solid #ff4e00;
+    padding-left:20px;
+    flex-direction:column;
+    gap:18px;
+}
+
+.subopcoes h4{
+    color:#ff4e00;
+    font-size:1rem;
+}
+
+.btn-enviar{
+    border:none;
+    background:#ff4e00;
+    color:#fff;
+    padding:16px 28px;
+    border-radius:12px;
+    font-weight:700;
+    font-size:1rem;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.btn-enviar:hover{
+    transform:translateY(-3px);
+}
+
+.form-aviso{
+    text-align:center;
+    font-size:.9rem;
+    min-height:20px;
+}
+
+.form-aviso.erro{
+    color:#ff4e4e;
+}
+
+.form-aviso.sucesso{
+    color:#4eff8a;
+}
+
+/* FAQ */
+
+.faq{
+    width:min(900px,90%);
+    margin:120px auto;
+}
+
+.faq h2{
+    text-align:center;
+    margin-bottom:50px;
+    font-size:40px;
+}
+
+.faq-item{
+    background:#181818;
+    border:1px solid transparent;
+    border-radius:14px;
+    margin-bottom:18px;
+    overflow:hidden;
+    transition:.3s;
+}
+
+.faq-item.active{
+    border-color:#ff4d0063;
+}
+
+.faq-question{
+    width:100%;
+    padding:22px 28px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    background:none;
+    border:none;
+    color:#fff;
+    font-size:18px;
+    cursor:pointer;
+}
+
+.faq-question span{
+    font-size:24px;
+    transition:.3s;
+}
+
+.faq-item.active span{
+    transform:rotate(45deg);
+}
+
+.faq-answer{
+    max-height:0;
+    overflow:hidden;
+    transition:max-height .35s ease;
+}
+
+.faq-answer p{
+    padding:0 28px 22px;
+    color:#bdbdbd;
+    line-height:1.7;
+}
+
+ /* responsivo */
+
+@media(max-width:768px){
+
+.hero-content h1{
+    font-size:38px;
+}
+
+.hero-content p{
+    font-size:16px;
+}
+
+.steps{
+    gap:45px;
+}
+
+.formulario{
+    margin:80px auto;
+}
+
+.form-parceiro{
+    padding:26px;
+}
+
+.form-row{
+    grid-template-columns:1fr;
+}
+}

@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Produtos | Smart Shield</title>
+<link rel="stylesheet" href="main.css">
+<link rel="stylesheet" href="cards.css">
+<link rel="stylesheet" href="produtos.css">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+<link rel="icon" type="image/png" href="fav.png">
+</head>
+
+<body>
+<header>
+    <div class="logo">
+        <img src="smartlogo.png" alt="Logo da Smart">
+        <span>SMART SHIELD</span>
+    </div>
+
+    <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+
+    <nav>
+        <!-- menu lá -->
+    <ul class="menu">
+        <li> <a href="index.html">Início</a> </li>
+        <!--<li> <a href="revendedores.html">Parceiros</a> </li>--> 
+
+        <!-- produtos -->
+        <li class="dropdown">
+            <a href="produtos.html">Produtos</a>
+        <ul class="dropdown-menu">
+            <li>
+                <a href="produtos.html?categoria=all">
+                    Todos
+                </a>
+            </li>
+            <li>
+                <a href="produtos.html?categoria=peliculas">
+                    Películas
+                </a>
+            </li>
+            <li>
+                <a href="produtos.html?categoria=maquinas">
+                    Máquinas
+                </a>
+            </li>
+            <li>
+                <a href="produtos.html?categoria=acessorios">
+                    Acessórios
+                </a>
+            </li>
+        </ul>
+        </li>
+        
+        <!--só a parte do contato-->
+        <li class="dropdown">
+            <a href="#">Contato</a>
+        <ul class="dropdown-menu">
+            <li>
+                <a href="https://api.whatsapp.com/send?phone=554499485216&text=Olá!%20Acessei%20o%20site%20de%20vocês%20e%20desejo%20atendimento..." target="_blank">
+                    WhatsApp </a>
+            </li>
+            <li>
+                <a href="https://www.instagram.com/smartshieldd/" target="_blank">
+                    Instagram </a>
+            </li>
+            <li>
+                <a href="parceiros.html">
+                    Seja um Parceiro </a>
+            </li>
+        </ul>
+        </ul>
+        </li>
+    </ul>
+    </nav>
+</header>
+
+
+
+<section class="products-page">
+<nav class="breadcrumb" id="breadcrumb"></nav>
+
+
+    <!-- HERO -->
+    <div class="products-hero">
+        <div class="products-hero-image">
+            <img src="geminiteste.webp" alt="Foto da amostra">
+        </div>
+        <div class="products-text">
+            <h1>Proteção que combina tecnologia e design.</h1>
+            <p>Películas, máquinas e acessórios premium desenvolvidos para elevar a experiência dos seus dispositivos.</p>
+
+            <div class="hero-benefits">
+                <div class="benefit">
+                    Alta Proteção
+                </div>
+
+                <div class="benefit">
+                    Design Premium
+                </div>
+
+                <div class="benefit">
+                    Tecnologia Avançada
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- pesquisa -->
+
+
+    <!-- categorias -->
+    <div class="categories" id="produtos">
+        <button class="category active " data-filter="all">
+            Todos
+        </button>
+
+        <button class="category" data-filter="peliculas">
+            Películas
+        </button>
+
+        <button class="category" data-filter="maquinas">
+            Máquinas
+        </button>
+
+        <button class="category" data-filter="acessorios">
+            Acessórios
+        </button>
+
+            <input
+    type="text"
+    id="search-products"
+    placeholder="Pesquisar produtos..."
+    class="search-products">
+    </div>
+
+    <!-- PRODUTOS -->
+    <div class="products-grid"></div>
+
+</section>
+
+<footer>
+    <div class="topo-footer">
+        <div class="logo-footer">
+            <img src="smartlogo.png" alt="Smart Shield">
+            <span>Smart Shield</span>
+        </div>
+        <ul class="footer-links">
+            <li><a href="index.html">Início</a></li>
+            <li><a href="produtos.html">Produtos</a></li>
+            <li><a href="parceiros.html">Seja um Parceiro</a></li>
+            <li><a href="https://instagram.com/smartshieldd" target="_blank">Instagram</a></li>
+        </ul>
+        <p class="copyright">© <span id="footer-year"></span> Todos os direitos reservados.</p>
+    </div>
+    <div class="info-footer">
+        <p>
+            Av. Artur M. Tomás, 1312 - Zona 6<br>
+            Cianorte - PR, CEP 87205-050<br>
+            CNPJ 45.656.001/0001-27
+        </p>
+        <p>
+            (44) 9 9948-5216<br>
+            contato@smartshield.com.br
+        </p>
+    </div>
+</footer>
+
+    <!-- Adicionei o botão do WhatsApp flutuante -->
+<a href="https://wa.me/554499485216?text=Olá!%20Vim%20pelo%20site%20da%20Smart%20Shield." class="whatsapp-float" target="_blank">
+    <svg viewBox="0 0 32 32" width="22" height="22" fill="currentColor">
+        <path d="M16 .4C7.4.4.4 7.3.4 15.9c0 2.8.7 5.5 2.1 7.9L0 32l8.4-2.2c2.3 1.3 4.9 2 7.6 2 8.6 0 15.6-6.9 15.6-15.5S24.6.4 16 .4zm8.9 22.2c-.4 1-2.2 2-3.1 2.1-.8.1-1.8.2-5.9-1.4-5.2-2.1-8.5-7.2-8.8-7.5-.3-.4-2.1-2.8-2.1-5.3s1.3-3.8 1.8-4.4c.5-.5 1-.7 1.3-.7h1c.3 0 .8-.1 1.2.8.4.9 1.4 3.3 1.5 3.6.1.3.2.7 0 1.1-.2.4-.3.7-.6 1-.3.3-.6.7-.8.9-.3.3-.5.7-.2 1.2.3.5 1.3 2.1 2.9 3.4 2 1.8 3.6 2.4 4.2 2.7.5.2.9.2 1.2-.2.4-.4 1.5-1.8 1.9-2.4.4-.6.8-.5 1.3-.3.5.2 3.3 1.5 3.9 1.8.5.3.9.4 1 .6.1.2.1 1.2-.3 2.2z"/>
+    </svg>
+    <p>Fale Conosco</p>
+</a>
+
+    <!-- Adicionei o botão de voltar ao topo -->
+<a href="#" class="back-to-top" id="backToTop">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+        <path d="M12 19V5M12 5L5 12M12 5L19 12"
+              stroke="currentColor"
+              stroke-width="2.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"/>
+    </svg>
+</a>
+
+<script src="main.js"></script>
+<script src="breadcrumb.js"></script>
+<script src="cards.js"></script>
+<script src="produtos.js"></script>
+<script src="catalogo.js"></script>
+
+</body>

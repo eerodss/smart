@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Seja um Parceiro | Smart Shield</title>
+<link rel="stylesheet" href="main.css">
+<link rel="stylesheet" href="parceiros.css">
+<link rel="stylesheet" href="cards.css">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+<link rel="icon" type="image/png" href="fav.png">
+</head>
+<body>
+
+<header>
+    <div class="logo">
+        <img src="smartlogo.png" alt="Logo da Smart">
+        <span>SMART SHIELD</span>
+    </div>
+
+    <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+
+    <nav>
+        <!-- header -->
+    <ul class="menu">
+        <li> <a href="index.html">Início</a> </li>
+        <!--<li> <a href="revendedores.html">Parceiros</a> </li>--> 
+
+        <!-- produtos -->
+        <li class="dropdown">
+            <a href="produtos.html">Produtos</a>
+        <ul class="dropdown-menu">
+            <li>
+                <a href="produtos.html?categoria=all">
+                    Todos
+                </a>
+            </li>
+            <li>
+                <a href="produtos.html?categoria=peliculas">
+                    Películas
+                </a>
+            </li>
+            <li>
+                <a href="produtos.html?categoria=maquinas">
+                    Máquinas
+                </a>
+            </li>
+            <li>
+                <a href="produtos.html?categoria=acessorios">
+                    Acessórios
+                </a>
+            </li>
+        </ul>
+        </li>
+        
+        <!--só a parte do contato-->
+        <li class="dropdown">
+            <a href="#">Contato</a>
+        <ul class="dropdown-menu">
+            <li>
+                <a href="https://api.whatsapp.com/send?phone=554499485216&text=Olá!%20Acessei%20o%20site%20de%20vocês%20e%20desejo%20atendimento..." target="_blank">
+                    WhatsApp </a>
+            </li>
+            <li>
+                <a href="https://www.instagram.com/smartshieldd/" target="_blank">
+                    Instagram </a>
+            </li>
+            <li>
+                <a href="parceiros.html">
+                    Seja um Parceiro </a>
+            </li>
+        </ul>
+        </li>
+    </ul>
+    </nav>
+</header>
+
+
+<!-- HERO -->
+<section class="hero-distribuidor">
+
+    <div class="hero-content">
+
+        <span class="tag">
+            Programa Oficial de Parceria
+        </span>
+
+        <h1>
+            Faça parte da rede de parceiros Smart Shield.
+        </h1>
+
+        <p>
+            Trabalhe com uma linha completa de películas, máquinas de corte e acessórios,
+            contando com suporte especializado e materiais exclusivos para impulsionar seu negócio.
+        </p>
+
+        <a href="#cadastro" class="cta reveal" data-delay="50">
+            Quero ser um Parceiro
+        </a>
+    </div>
+</section>
+
+
+<!-- BENEFÍCIOS -->
+
+<section class="beneficios">
+
+    <h2>Por que ser parceiro?</h2>
+
+    <div class="beneficios-grid">
+
+        <div class="beneficio reveal" data-delay="0">
+            🚀
+            <h3>Produtos Premium</h3>
+            <p>Linha completa de películas e acessórios.</p>
+        </div>
+
+        <div class="beneficio reveal" data-delay="100">
+            🤝
+            <h3>Suporte Especializado</h3>
+            <p>Equipe preparada para ajudar você diariamente.</p>
+        </div>
+
+        <div class="beneficio reveal" data-delay="200">
+            📈
+            <h3>Marketing</h3>
+            <p>Materiais prontos para divulgação da sua loja.</p>
+        </div>
+
+        <div class="beneficio reveal" data-delay="300">
+            ⚙️
+            <h3>Máquinas Smart</h3>
+            <p>Modelos bloqueados e desbloqueados.</p>
+        </div>
+    </div>
+</section>
+
+
+<!-- COMO FUNCIONA -->
+
+<section class="processo">
+
+    <h2>Como funciona?</h2>
+
+    <div class="steps">
+
+        <div class="step revealX" data-delay="0">
+            <span>1</span>
+            <h3>Cadastro</h3>
+            <p>Preencha o formulário.</p>
+        </div>
+
+        <div class="step revealX" data-delay="100">
+            <span>2</span>
+            <h3>Análise</h3>
+            <p>Nossa equipe analisa seu perfil.</p>
+        </div>
+
+        <div class="step revealX" data-delay="200">
+            <span>3</span>
+            <h3>Contato</h3>
+            <p>Entramos em contato rapidamente.</p>
+        </div>
+
+        <div class="step revealX" data-delay="300">
+            <span>4</span>
+            <h3>Parceria</h3>
+            <p>Você começa a vender Smart Shield.</p>
+        </div>
+    </div>
+</section>
+
+
+<!-- FORMULÁRIO -->
+
+<section class="formulario" id="cadastro">
+
+    <h2>Cadastre-se para ser parceiro</h2>
+    <p class="formulario-sub">
+        Preencha os dados abaixo e nossa equipe entra em contato com você.
+    </p>
+
+    <form id="formParceiro" class="form-parceiro">
+
+        <div class="form-group">
+            <label for="nome">Nome completo</label>
+            <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+        </div>
+
+        <div class="form-group">
+            <label for="contato">Como podemos entrar em contato?</label>
+            <input type="text" id="contato" name="contato" placeholder="Digite seu telefone ou email" required>
+        </div>
+
+        <div class="form-row">
+            <div class="form-group">
+                <label for="estado">Estado</label>
+                <select id="estado" name="estado" required>
+                    <option value="" disabled selected>Selecione o estado</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="cidade">Cidade</label>
+                <select id="cidade" name="cidade" required disabled>
+                    <option value="" disabled selected>Selecione o estado primeiro</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label>O que você precisa?</label>
+            <div class="opcoes-interesse">
+                <label class="checkbox-opcao">
+                    <input type="checkbox" name="interesse" value="aluguel" data-alvo="sub-aluguel">
+                    <span>Máquina de aluguel (bloqueada)</span>
+                </label>
+                <label class="checkbox-opcao">
+                    <input type="checkbox" name="interesse" value="venda" data-alvo="sub-venda">
+                    <span>Máquina de venda (desbloqueada)</span>
+                </label>
+                <label class="checkbox-opcao">
+                    <input type="checkbox" name="interesse" value="insumos" data-alvo="sub-insumos">
+                    <span>Insumos / Acessórios</span>
+                </label>
+            </div>
+        </div>
+
+        <div class="subopcoes" id="sub-aluguel" hidden>
+            <h4>Máquina de aluguel</h4>
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="aluguel-qtd">Quantidade desejada</label>
+                    <select id="aluguel-qtd" name="aluguel-qtd">
+                        <option value="1 máquina">1 máquina</option>
+                        <option value="2 máquinas">2 máquinas</option>
+                        <option value="3 ou mais">3 ou mais</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="aluguel-prazo">Prazo de contrato</label>
+                    <select id="aluguel-prazo" name="aluguel-prazo">
+                        <option value="12 meses">12 meses</option>
+                        <option value="24 meses">24 meses</option>
+                        <option value="36 meses">36 meses</option>
+                        <option value="48 meses">48 meses</option>
+                        <option value="60 meses">60 meses</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <div class="subopcoes" id="sub-venda" hidden>
+            <h4>Máquina de venda</h4>
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="venda-qtd">Quantidade desejada</label>
+                    <select id="venda-qtd" name="venda-qtd">
+                        <option value="1 máquina">1 máquina</option>
+                        <option value="2 máquinas">2 máquinas</option>
+                        <option value="3 ou mais">3 ou mais</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="venda-pagamento">Forma de pagamento de interesse</label>
+                    <select id="venda-pagamento" name="venda-pagamento">
+                        <option value="PIX à vista">PIX à vista</option>
+                        <option value="Cartão parcelado">Cartão parcelado</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <div class="subopcoes" id="sub-insumos" hidden>
+            <h4>Insumos / Acessórios</h4>
+            <div class="opcoes-interesse">
+                <label class="checkbox-opcao">
+                    <input type="checkbox" name="insumo-tipo" value="Películas">
+                    <span>Películas</span>
+                </label>
+                <label class="checkbox-opcao">
+                    <input type="checkbox" name="insumo-tipo" value="Produtos de limpeza">
+                    <span>Materiais para aplicação</span>
+                </label>
+                <label class="checkbox-opcao">
+                    <input type="checkbox" name="insumo-tipo" value="Acessórios (tapete, etc)">
+                    <span>Cabos e Carregadores</span>
+                </label>
+            </div>
+        </div>
+
+        <button type="submit" class="btn-enviar">Enviar cadastro</button>
+        <p class="form-aviso" id="formAviso"></p>
+    </form>
+</section>
+
+
+<!-- FAQ -->
+
+<section class="faq">
+    <h2>Perguntas Frequentes</h2>
+
+    <div class="faq-container">
+
+        <div class="faq-item revealX" data-delay="0">
+            <button class="faq-question">
+                Preciso ter CNPJ?
+                <span>+</span>
+            </button>
+
+            <div class="faq-answer">
+                <p>
+                    Sim. Para se tornar um parceiro da Smart Shield é necessário possuir CNPJ ativo e loja física.
+                </p>
+            </div>
+        </div>
+
+        <div class="faq-item revealX" data-delay="100">
+            <button class="faq-question">
+                Existe pedido mínimo?
+                <span>+</span>
+            </button>
+
+            <div class="faq-answer">
+                <p>
+                    Não. Não temos uma quantidade ou valor de pedido mínimo. Você pode solicitar o que desejar, de acordo com a disponibilidade de estoque.
+                </p>
+            </div>
+        </div>
+
+        <div class="faq-item revealX" data-delay="200">
+            <button class="faq-question">
+                Quanto tempo leva a análise?
+                <span>+</span>
+            </button>
+
+            <div class="faq-answer">
+                <p>
+                    Normalmente em até 24 horas úteis.
+                </p>
+            </div>
+        </div>
+
+        <div class="faq-item revealX" data-delay="300">
+            <button class="faq-question">
+                A Smart Shield fornece treinamento?
+                <span>+</span>
+            </button>
+
+            <div class="faq-answer">
+                <p>
+                    Sim. Fornecemos treinamento completo para utilização das máquinas, corte e aplicação de películas, além de materiais de marketing para divulgação da sua loja.
+                </p>
+            </div>
+        </div>
+
+        <div class="faq-item revealX" data-delay="300">
+            <button class="faq-question">
+                Como funciona o suporte técnico?
+                <span>+</span>
+            </button>
+
+            <div class="faq-answer">
+                <p>
+                    O suporte técnico é realizado via WhatsApp ou ligação. Nossa equipe está disponível para auxiliar em qualquer dúvida ou problema que você possa ter.
+                </p>
+            </div>
+        </div>
+
+        <div class="faq-item revealX" data-delay="300">
+            <button class="faq-question">
+                Quais formas de pagamento são aceitas?
+                <span>+</span>
+            </button>
+
+            <div class="faq-answer">
+                <p>
+                    Aceitamos pagamentos via PIX e cartão de crédito em até 6x sem juros.
+                </p>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<footer>
+    <div class="topo-footer">
+        <div class="logo-footer">
+            <img src="smartlogo.png" alt="Smart Shield">
+            <span>Smart Shield</span>
+        </div>
+        <ul class="footer-links">
+            <li><a href="index.html">Início</a></li>
+            <li><a href="produtos.html">Produtos</a></li>
+            <li><a href="parceiros.html">Seja um Parceiro</a></li>
+            <li><a href="https://instagram.com/smartshieldd" target="_blank">Instagram</a></li>
+        </ul>
+        <p class="copyright">© <span id="footer-year"></span> Todos os direitos reservados.</p>
+    </div>
+    <div class="info-footer">
+        <p>
+            Av. Artur M. Tomás, 1312 - Zona 6<br>
+            Cianorte - PR, CEP 87205-050<br>
+            CNPJ 45.656.001/0001-27
+        </p>
+        <p>
+            (44) 9 9948-5216<br>
+            contato@smartshield.com.br
+        </p>
+    </div>
+</footer>
+
+<a href="https://wa.me/554499485216?text=Olá!%20Vim%20pelo%20site%20da%20Smart%20Shield." class="whatsapp-float" target="_blank">
+    <svg viewBox="0 0 32 32" width="22" height="22" fill="currentColor">
+        <path d="M16 .4C7.4.4.4 7.3.4 15.9c0 2.8.7 5.5 2.1 7.9L0 32l8.4-2.2c2.3 1.3 4.9 2 7.6 2 8.6 0 15.6-6.9 15.6-15.5S24.6.4 16 .4zm8.9 22.2c-.4 1-2.2 2-3.1 2.1-.8.1-1.8.2-5.9-1.4-5.2-2.1-8.5-7.2-8.8-7.5-.3-.4-2.1-2.8-2.1-5.3s1.3-3.8 1.8-4.4c.5-.5 1-.7 1.3-.7h1c.3 0 .8-.1 1.2.8.4.9 1.4 3.3 1.5 3.6.1.3.2.7 0 1.1-.2.4-.3.7-.6 1-.3.3-.6.7-.8.9-.3.3-.5.7-.2 1.2.3.5 1.3 2.1 2.9 3.4 2 1.8 3.6 2.4 4.2 2.7.5.2.9.2 1.2-.2.4-.4 1.5-1.8 1.9-2.4.4-.6.8-.5 1.3-.3.5.2 3.3 1.5 3.9 1.8.5.3.9.4 1 .6.1.2.1 1.2-.3 2.2z"/>
+    </svg>
+    <p>Fale Conosco</p>
+</a>
+
+<a href="#" class="back-to-top" id="backToTop">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+        <path d="M12 19V5M12 5L5 12M12 5L19 12"
+              stroke="currentColor"
+              stroke-width="2.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"/>
+    </svg>
+</a>
+
+<script src="main.js"></script>
+<script src="parceiros.js"></script>
+
+</body>
+</html>
